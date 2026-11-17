@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+
+<body>
+    <h1>Function</h1>
+
+<p id="check"> </p>
+<p id="check2"> </p>
+
+<script>
+
+const cars = ["BMW", "SKODA", "MERCEDES"];
+
+let carssort = cars.sort();
+
+document.getElementById('check').innerHTML = carssort; 
+
+let carsreverse = cars.reverse();
+
+document.getElementById('check2').innerHTML = carsreverse; 
+
+</script>
+
+</body>
+
+</html>
+
+
+<!--  
+
+function sayHello(){
+    return "Hello";
+}
+
+let hello = sayHello()
+
+document.getElementById('check').innerHTML = hello;
+
+
+
+function sayHello(a, b){
+    return "Hello " + name;
+}
+
+let hello = sayHello("giannhs")
+
+document.getElementById('check').innerHTML = hello;
+
+
+
+function add(a, b){
+    return a + b
+}
+
+let result = add(5,6);
+
+document.getElementById('check').innerHTML = "To apotelesma einai: " + result;
+
+
+
+function totalSum(){
+    let sum =0;
+
+    numbers= [100,200,300]
+    
+    for ( let i=0; i<numbers.length; i++ ) {
+        sum += numbers[i];      
+    }
+
+    return sum;
+}
+
+document.getElementById('check').innerHTML = totalSum(4,33,44,55,66,77)
+
+
+
+const cars = ["BMW", "SKODA", "MERCEDES"];
+
+let lista =  cars.toString();
+
+document.getElementById('check').innerHTML = lista;
+
+
+
+const cars = ["BMW", "SKODA", "MERCEDES"];
+
+let lista =  cars.at(1);
+
+document.getElementById('check').innerHTML = lista;
+
+
+
+const cars = ["BMW", "SKODA", "MERCEDES"];
+
+document.getElementById('check').innerHTML = cars;
+
+cars.pop()
+
+document.getElementById('check2').innerHTML = cars;
+
+
+
+const cars = ["BMW", "SKODA", "MERCEDES"];
+
+document.getElementById('check').innerHTML = cars;
+
+cars.push("PORCHE")
+
+document.getElementById('check2').innerHTML = cars;
+
+
+
+const cars = ["BMW", "SKODA", "MERCEDES"];
+
+const cars2 = ["BMW1", "SKODA1", "MERCEDES1"];
+
+const carsall = cars.concat(cars2);
+
+document.getElementById('check').innerHTML = carsall; 
